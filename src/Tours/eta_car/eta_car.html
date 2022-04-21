@@ -40,13 +40,13 @@
         <a-asset-item id="xray" src="../../gltf/etacar_xray.glb"></a-asset-item>
 
         <img id="deepspace" src="../../textures/deepspace.png">
-        <!-- <audio id="iron" src="./audio/Iron_Xray_AJ.wav" preload="auto"></audio>
+        <audio id="iron" src="./audio/Iron_Xray_AJ.wav" preload="auto"></audio>
         <audio id="neutron" src="./audio/NeutronStar_AJ.wav" preload="auto"></audio>
         <audio id="jets" src="./audio/Jets_AJ.wav" preload="auto"></audio>
         <audio id="acceleration" src="./audio/Acceleration_AJ.wav" preload="auto"></audio>
         <audio id="infrared" src="./audio/Infrared_AJ.wav" preload="auto"></audio>
         <audio id="outerblast_xray" src="./audio/OuterBlast_Xray_AJ.wav" preload="auto"></audio>
-        <audio id="outerblast_opt" src="./audio/OuterBlast_Opt_IR_AJ.wav" preload="auto"></audio> -->
+        <audio id="outerblast_opt" src="./audio/OuterBlast_Opt_IR_AJ.wav" preload="auto"></audio>
     	</a-assets>
 
   
@@ -120,38 +120,37 @@
      </a-entity>
 
      <a-entity
-     id="hydrogen"
-     gltf-model="#hydrogen"
-     renderer="antialias: true;
-     colorManagement: true;"
-     render-order="nebula"
-     transparent-edge-material = "opaqueAngle: 1.0;
-     transparentAngle: 0.5;
-     ">       
-   </a-entity>
+          id="hydrogen"
+          gltf-model="#hydrogen"
+          renderer="antialias: true;
+          colorManagement: true;"
+          render-order="nebula"
+          transparent-edge-material = "opaqueAngle: 1.0;
+          transparentAngle: 0.5;
+          ">       
+     </a-entity>
 
-   <a-entity
-   id="uv"
-   gltf-model="#uv"
-   renderer="antialias: true;
-   colorManagement: true;"
-   render-order="nebula"
-   transparent-edge-material = "opaqueAngle: 1.5;
-   transparentAngle: 0.2;
-   ">       
- </a-entity>
+     <a-entity
+          id="uv"
+          gltf-model="#uv"
+          renderer="antialias: true;
+          colorManagement: true;"
+          render-order="nebula"
+          transparent-edge-material = "opaqueAngle: 1.5;
+          transparentAngle: 0.2;
+          ">       
+     </a-entity>
 
       <a-entity
-        id="xray"
-        gltf-model="#xray"
-        renderer="antialias: true;
-        colorManagement: true;"
-        render-order="nebula"
-        transparent-edge-material = "opaqueAngle: 1.0;
-        transparentAngle: 0.0;
-        brightnessOffset: 1.0;
-
-        ">       
+            id="xray"
+            gltf-model="#xray"
+            renderer="antialias: true;
+            colorManagement: true;"
+            render-order="nebula"
+            transparent-edge-material = "opaqueAngle: 1.0;
+            transparentAngle: 0.0;
+            brightnessOffset: 1.0;
+            ">       
       </a-entity>
 
  </a-entity>
