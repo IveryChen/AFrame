@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <script src="https://cdn.jsdelivr.net/gh/aframevr/aframe@c937479ed9f4e70c1cadacc4e14af6a9a82e3cef/dist/aframe-master.min.js"></script>
-
     <meta charset="utf-8">
     <title>Eta Car</title>
 
@@ -34,23 +32,22 @@
 
       <!-- load gltf models, audio, and images here -->
     	<a-assets>
-        <a-asset-item id="ejecta" src="../../gltf/ic443_ejecta.glb"></a-asset-item>
-        <a-asset-item id="blastwave" src="../../gltf/ic443_blastwave.glb"></a-asset-item>
-
-        <!-- <a-asset-item id="blueglow" src="../../Tours/eta_car/gltf/etacar_blueglow.glb"></a-asset-item>
+        <!-- <a-asset-item id="ejecta" src="../../gltf/ic443_ejecta.glb"></a-asset-item>
+        <a-asset-item id="blastwave" src="../../gltf/ic443_blastwave.glb"></a-asset-item> -->
+        <a-asset-item id="blueglow" src="../../Tours/eta_car/gltf/etacar_blueglow.glb"></a-asset-item>
         <a-asset-item id="core" src="../../Tours/eta_car/gltf/etacar_core.glb"></a-asset-item>
         <a-asset-item id="hydrogen" src="../../Tours/eta_car/gltf/etacar_hydrogen.glb"></a-asset-item>
         <a-asset-item id="uv" src="../../Tours/eta_car/gltf/etacar_uv.glb"></a-asset-item>
-        <a-asset-item id="xray" src="../../Tours/eta_car/gltf/etacar_xray.glb"></a-asset-item> -->
+        <a-asset-item id="xray" src="../../Tours/eta_car/gltf/etacar_xray.glb"></a-asset-item>
 
         <img id="deepspace" src="../../textures/deepspace.png">
-        <!-- <audio id="iron" src="./audio/Iron_Xray_AJ.wav" preload="auto"></audio>
+        <audio id="iron" src="./audio/Iron_Xray_AJ.wav" preload="auto"></audio>
         <audio id="neutron" src="./audio/NeutronStar_AJ.wav" preload="auto"></audio>
         <audio id="jets" src="./audio/Jets_AJ.wav" preload="auto"></audio>
         <audio id="acceleration" src="./audio/Acceleration_AJ.wav" preload="auto"></audio>
         <audio id="infrared" src="./audio/Infrared_AJ.wav" preload="auto"></audio>
         <audio id="outerblast_xray" src="./audio/OuterBlast_Xray_AJ.wav" preload="auto"></audio>
-        <audio id="outerblast_opt" src="./audio/OuterBlast_Opt_IR_AJ.wav" preload="auto"></audio> -->
+        <audio id="outerblast_opt" src="./audio/OuterBlast_Opt_IR_AJ.wav" preload="auto"></audio>
     	</a-assets>
 
   
@@ -59,26 +56,26 @@
         <a-entity id="camera" camera="active: true" position="0 0 0"></a-entity>
         <a-entity id="controllerElement" controller sound="autoplay: false; volume: 0.75">
           <!-- naming convention: all lower case -->
-          <!-- <a-curve id="one" tour="dur: 3000; pauseDuration: 2000; text: You are looking at data from the Cassiopeia A supernova. 
+          <a-curve id="one" tour="dur: 3000; pauseDuration: 2000; text: You are looking at data from the Cassiopeia A supernova. 
           Click anywhere on the screen to orbit the data and see it from all angles. Clicking will move you along to another stop on the tour.">
             <a-curve-point position="2.8 -0.5 -5.5"></a-curve-point>
             <a-curve-point position="2.8 5.4 -.5"></a-curve-point>
             <a-curve-point position="0.7 -0.5 7.7"></a-curve-point>
           new coordinates
-          </a-curve> -->
-          <!-- <a-curve id="two" tour="dur: 10000; pauseDuration: 7000; audio: neutron; text: At the center of Cas A is a neutron star, a small ultra-dense star created by the supernova.">
+          </a-curve>
+          <a-curve id="two" tour="dur: 10000; pauseDuration: 7000; audio: neutron; text: At the center of Cas A is a neutron star, a small ultra-dense star created by the supernova.">
             <a-curve-point position="2.8 -0.5 -5.5"></a-curve-point>
             <a-curve-point position="2.8 5.4 -.5"></a-curve-point>
             <a-curve-point position="0.7 -0.5 7.7"></a-curve-point>
-          </a-curve> -->
+          </a-curve>
 
           <!-- We usually include one last stop on the tour as a vantage point -->
           <!-- This last camera animation is also shown during the splash screen while the objects are loading -->
-          <!-- <a-curve id="two" tour="dur: 15000; pauseDuration: 8000; text: ">
+          <a-curve id="two" tour="dur: 15000; pauseDuration: 8000; text: ">
             <a-curve-point position="2.8 -0.5 -5.5"></a-curve-point>
             <a-curve-point position="2.8 5.4 -.5"></a-curve-point>
             <a-curve-point position="0.7 -0.5 7.7"></a-curve-point>
-          </a-curve> -->
+          </a-curve>
         </a-entity>
       </a-entity>
 
@@ -104,15 +101,6 @@
      position="0 0 0"
      rotation="0 0 0">
 
-     <a-entity
-         id="ejecta"
-         gltf-model="#blueglow"
-         renderer="antialias: true;
-         colorManagement: true;"
-         render-order="nebula"
-         >
-     </a-entity>
-<!-- 
      <a-entity
          id="blueglow"
          gltf-model="#blueglow"
@@ -164,7 +152,7 @@
             transparentAngle: 0.0;
             brightnessOffset: 1.0;
             ">       
-      </a-entity> -->
+      </a-entity>
 
  </a-entity>
 
