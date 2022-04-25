@@ -116,7 +116,7 @@
           renderer="antialias: true;
           colorManagement: true;"
           render-order="nebula"
-          transparent-edge-material
+          transparent-edge-material = "contrast: 10.0;"
           >
      </a-entity>
 
@@ -142,16 +142,25 @@
           ">       
      </a-entity>
 
+     <!-- <a-entity
+     id="xray"
+     gltf-model="#xray"
+     renderer="antialias: true;
+     colorManagement: true;"
+     render-order="nebula"
+     transparent-edge-material = "opaqueAngle: 0.0;
+     transparentAngle: 0.0;
+     brightnessOffset: 1.0;
+     ">       
+</a-entity> -->
+
       <a-entity
             id="xray"
             gltf-model="#xray"
             renderer="antialias: true;
             colorManagement: true;"
             render-order="nebula"
-            transparent-edge-material = "opaqueAngle: 1.0;
-            transparentAngle: 0.0;
-            brightnessOffset: 1.0;
-            ">       
+            >       
       </a-entity>
 
  </a-entity>
